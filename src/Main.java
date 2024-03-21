@@ -16,11 +16,16 @@ public class Main {
         String nombrePersona02 = teclado.next();
         Double alturaPersona02 = teclado.nextDouble();
 
-        if (alturaPersona01 > alturaPersona02) {
-            System.out.println(nombrePersona01 + " es la persona mas alta.");
+        if (!alturaPersona01.equals(alturaPersona02)) {
+            if (alturaPersona01 > alturaPersona02) {
+                System.out.println(nombrePersona01 + " es la persona más alta.");
+            }
+            else {
+                System.out.println(nombrePersona02 + " es la persona más alta.");
+            }
         }
         else {
-            System.out.println(nombrePersona02 + " es la persona mas alta.");
+            System.out.println("Estas personas tienen la misma altura. ;)");
         }
     }
 }
